@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLink - Smart Queuing System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 60vh;
+        }
+        .feature-card { 
+            transition: transform 0.3s; 
+            height: 100%;
+        }
+        .feature-card:hover { 
+            transform: translateY(-5px); 
+        }
+        .btn-custom {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+        }
+        .btn-custom:hover {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="fas fa-link me-2"></i>QLink
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#demo">Demo</a>
+                <a class="nav-link" href="https://github.com/YOUR_USERNAME/QLink">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">QLink Smart Queuing System</h1>
+            <p class="lead mb-4 fs-4">A modern, mobile-first queuing system built for schools using PHP, MySQL, and Bootstrap</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="https://github.com/edzeliciouuus/QLink" class="btn btn-light btn-lg px-4">
+                    <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+                <a href="#demo" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fas fa-play me-2"></i>See Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Key Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Mobile-First Design</h5>
+                            <p class="card-text">Responsive interface that works perfectly on all devices - phones, tablets, and computers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-users fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Role-Based Access</h5>
+                            <p class="card-text">Students, Staff, and Admin roles with appropriate permissions and security.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-bell fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Real-Time Notifications</h5>
+                            <p class="card-text">SMS and in-app notifications when you're next in line or when your turn is called.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-building fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Department Management</h5>
+                            <p class="card-text">Multiple departments with independent queues and specialized management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-chart-bar fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Analytics Dashboard</h5>
+                            <p class="card-text">Track wait times, peak hours, completion rates, and system performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-shield-alt fa-3x text-dark mb-3"></i>
+                            <h5 class="card-title">Security Features</h5>
+                            <p class="card-text">CSRF protection, prepared statements, password hashing, and session security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Try the System</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 class="mb-4">Demo Credentials</h4>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title text-primary">Admin Account</h6>
+                            <p class="card-text"><strong>Email:</strong> admin@qlink.edu.ph<br><strong>Password:</strong> admin123</p>
+                            
+                            <h6 class="card-title text-success">Staff Account</h6>
+                            <p class="card-text"><strong>Email:</strong> john.smith@qlink.edu.ph<br><strong>Password:</strong> staff123</p>
+                            
+                            <h6 class="card-title text-info">Student Account</h6>
+                            <p class="card-text"><strong>Email:</strong> alice.brown@student.qlink.edu.ph<br><strong>Password:</strong> student123</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-4">System Screenshots</h4>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-desktop fa-2x text-primary mb-2"></i>
+                                    <h6>Dashboard View</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-mobile-alt fa-2x text-success mb-2"></i>
+                                    <h6>Mobile View</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Quick Installation</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4">
+                                <i class="fas fa-download me-2"></i>Get Started in 3 Steps
+                            </h5>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                                            <span class="fw-bold">1</span>
+                                        </div>
+                                        <h6>Download</h6>
+                                        <p class="small">Download or clone the repository to your local machine</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                                            <span class="fw-bold">2</span>
+                                        </div>
+                                        <h6>Setup Database</h6>
+                                        <p class="small">Import the SQL file to your MySQL database</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                                            <span class="fw-bold">3</span>
+                                        </div>
+                                        <h6>Configure</h6>
+                                        <p class="small">Update config.php with your database settings</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-4">
+                                <a href="https://github.com/YOUR_USERNAME/QLink#installation" class="btn btn-custom btn-lg">
+                                    <i class="fas fa-book me-2"></i>Full Installation Guide
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 display-5">Built With</h2>
+            <div class="row text-center">
+                <div class="col-md-2 col-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fab fa-php fa-3x text-primary mb-2"></i>
+                            <h6>PHP 8+</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-3x text-warning mb-2"></i>
+                            <h6>MySQL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fab fa-bootstrap fa-3x text-purple mb-2"></i>
+                            <h6>Bootstrap 5</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fab fa-js-square fa-3x text-warning mb-2"></i>
+                            <h6>JavaScript</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-mobile-alt fa-3x text-success mb-2"></i>
+                            <h6>Responsive</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt fa-3x text-danger mb-2"></i>
+                            <h6>Secure</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-link me-2"></i>QLink</h5>
+                    <p class="mb-0">Making queuing smart and simple for schools everywhere!</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3 flex-wrap">
+                        <a href="https://github.com/YOUR_USERNAME/QLink" class="text-white">
+                            <i class="fab fa-github me-1"></i>GitHub
+                        </a>
+                        <a href="https://github.com/YOUR_USERNAME/QLink/issues" class="text-white">
+                            <i class="fas fa-bug me-1"></i>Issues
+                        </a>
+                        <a href="https://github.com/YOUR_USERNAME/QLink/discussions" class="text-white">
+                            <i class="fas fa-comments me-1"></i>Discussions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 QLink. Built with ❤️ for schools everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
